@@ -1,0 +1,28 @@
+<h1>{{ mensaje }}</h1>
+    <div class="py-4">
+        <h2>Lista de participantes</h2>
+        <hr/>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Foto</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Años de experiencia</th>
+                    <th scope="col">Especialidad</th>
+                    <th scope="col">Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        {{> dashboard}}
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+            {{> iniciar_sesion}}
+            {{> registrarme}}
+    </div>
+    
+

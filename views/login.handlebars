@@ -1,0 +1,23 @@
+<h1>{{ mensaje }}</h1>
+<div class="py-5">
+    <h2>Iniciar Sesión</h2>
+    <hr class="w-50" />
+
+    <form id="loginForm" action="/login" method="post">
+        <div class="form-group">
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control w-50 m-auto" type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input class="form-control w-50 m-auto" type="password" id="password" name="password"required />
+            </div>
+        </div> 
+        <button class="btn btn-success mb-3" type="submit" >Ingresar</button>
+        <p>¿Aún no tienes cuenta?</p>
+        {{> registrarme}}
+    </form>
+</div>
+
+
